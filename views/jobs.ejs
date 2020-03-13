@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" type="text/css" href="/dist/semantic.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+
+  </head>
+  <body>
+
+    <h1><%= title %></h1><br>
+    <h5>Selecciona un parametro de busqueda</h5>
+    <h3>Pais</h3>
+
+    
+      <div class="input-group mb-3">
+        
+        <select class="custom-select" id="location">
+          <option selected>Selecciona pais</option>
+          <option value="new york">New York</option>
+          <option value="santiago">Santiago</option>
+          <option value="buenos aires">Buenos Aires</option>
+        </select>
+        
+      </div>
+
+      <h3>Afinidad</h3>
+      <div class="input-group mb-3">
+        <select class="custom-select" id="desc">
+          <option selected>Selecciona una opcion</option>
+          <option value="javascript">Javascript</option>
+          <option value="python">Python</option>
+          <option value="php">Php</option>
+        </select>
+        
+      </div>
+
+      <button type="button" class="btn btn-primary bg-dark" onclick="buscar()">Buscar</button>
+
+    
+
+      <div id="datostrabajos">
+
+
+      </div>
+
+
+    <!-- DIseña acá tu vista -->
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"></script>
+    <script src="/dist/semantic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js"></script>
+    <script src="/actions/jobs.js"></script>
+  </body>
+</html>
